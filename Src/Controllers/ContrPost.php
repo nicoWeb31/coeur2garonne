@@ -1,5 +1,7 @@
 <?php 
 namespace Src\Controllers ; 
+use Src\Utils\Render;
+use Src\Models\Comment;
 require_once 'vendor/autoload.php';
 
 class ContrPost extends Controller {
@@ -44,7 +46,7 @@ class ContrPost extends Controller {
         }
         $article = $this->model->find($article_id);
 
-        $commentaires = $CommetModel->findAllByArticle($article_id);
+        $commentaires = $CommetModel->findAllByPost($article_id);
         
         /**
          * 5. On affiche 
@@ -89,4 +91,3 @@ class ContrPost extends Controller {
 
 }
 
-?>

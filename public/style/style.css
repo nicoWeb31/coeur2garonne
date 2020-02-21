@@ -1,0 +1,116 @@
+/* ========================================================================== */
+/* main color  */
+/* ========================================================================== */
+
+:root {
+    --main-color:rgb(0, 204, 0);
+    --second-color:rgb(216, 195, 8);
+    --third-color:#06c;
+}
+
+/* ========================================================================== */
+/* generique class */
+/* ========================================================================== */
+
+.hcenter{
+    text-align: center;
+}
+
+
+body{
+/* background-color: rgb(39, 38, 38); */
+background-image: linear-gradient(rgb(90, 87, 87)40%,rgb(205, 212, 191));
+background-repeat: no-repeat;
+
+/* color:rgb(139, 139, 139); */
+
+
+}
+
+
+/* ========================================================================== */
+/* header et nav bar */
+/* ========================================================================== */
+.divOneNav{
+
+    border-bottom: 4px solid var(--main-color);
+    height: 100px;
+}
+
+.entet{
+
+text-align: center;
+color:var(--second-color);
+
+}
+
+.entet >h2{
+    
+    text-shadow: 2px 2px 2px var(--main-color);
+}
+
+nav{
+background-color: rgba(56, 56, 56,0.6);
+height:70px;
+}
+
+ul{
+    list-style: none;
+}
+
+li {
+    justify-content: space-around;
+    text-decoration: none;
+    color:var(--main-color);
+    font-size: 20px;
+    }
+
+.nav-link{
+    text-decoration: none;
+    color:var(--main-color);
+    padding: 20px;
+    font-size: 18px;
+    background: linear-gradient(to top, rgba(211, 198, 19, 0.5) 0%, rgba(211, 198, 19, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .4s;
+    -webkit-transition: background-size .4s;
+    -moz-transition: background-size .4s;
+    -ms-transition: background-size .4s;
+    -o-transition: background-size .4s;
+}
+/* effet sur logo facbook*/
+.fac{
+    transition: transform .3s;
+}
+.fac:hover{
+    transform:scale(2);
+}
+/* fin effet sur logo facbook*/
+
+.deuxiemenav > li > a{ 
+    font-size: 20px;
+    padding: 10px 40px;
+}
+
+a:hover{
+
+color:var(--second-color);
+background-size: 100% 100%;
+}
+
+/* ========================================================================== */
+/* formulaire adhésion*/
+/* ========================================================================== */
+
+input[type=text],[type=number]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid var(--main-color);
+    border-radius: 4px;
+}
+
+input:hover {
+    border: 3px solid var(--second-color);
+    
+}
