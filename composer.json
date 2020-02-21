@@ -1,0 +1,15 @@
+{
+    "name": "nico/projet-coeur",
+    "authors": [
+        {
+            "name": "Riot Nicolas",
+            "email": "nico.riot@free.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Source\\":"Src/"
+        }
+    },
+    "require": {}
+}
